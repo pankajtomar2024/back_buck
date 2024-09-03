@@ -26,8 +26,7 @@ export default defineConfig({
     proxy: {
       "/api": "https://bakebucks-server.onrender.com",
     },
-  },
-  
+  }
 });
 
 
