@@ -20,13 +20,13 @@ export default defineConfig({
       //@ts-ignore
       "@": path.resolve(__dirname, "src"),
     },
-  },
-
- server: {
-    proxy: {
-      "/api": "https://bakebucks-server.onrender.com",
-    },
   }
+
+ // server: {
+ //    proxy: {
+ //      "/api": "https://bakebucks-server.onrender.com",
+ //    },
+ //  }
 });
 
 
