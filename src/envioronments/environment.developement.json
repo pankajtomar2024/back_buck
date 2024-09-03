@@ -1,0 +1,5 @@
+{
+    "BASE_ADMIN_API_URL": "http://localhost:8001",
+    "ENV": "LOCAL"
+   
+  }
