@@ -37,15 +37,15 @@ function App() {
                 <Route path="/" element={<HomePage />}></Route>
 
 
-                <Route path="admin/product" element={<LoginPage />}></Route>
+{/*                 <Route path="admin/product" element={<LoginPage />}></Route> */}
                 <Route path="shop" element={<EShopLayout />}></Route>
-                <Route path="user/add" element={<AddUser />}></Route>
-                <Route path="cart/exit" element={<ExitCartPage />}></Route>
-                <Route path="about" element={<AboutUs />}></Route>
-                <Route path="product/:id" element={<ProductPage />}></Route>
-                <Route path="order" element={<Order />}></Route>
-                <Route path="profile" element={<Profile />}></Route>
-                <Route path="login" element={<LoginPage />}></Route>
+{/*                 <Route path="user/add" element={<AddUser />}></Route> */}
+{/*                 <Route path="cart/exit" element={<ExitCartPage />}></Route> */}
+                // <Route path="about" element={<AboutUs />}></Route>
+{/*                 <Route path="product/:id" element={<ProductPage />}></Route> */}
+{/*                 <Route path="order" element={<Order />}></Route> */}
+{/*                 <Route path="profile" element={<Profile />}></Route> */}
+{/*                 <Route path="login" element={<LoginPage />}></Route> */}
               </Route>
 
 {/*               <Route path="admin/login" element={<LoginPage />}></Route>
