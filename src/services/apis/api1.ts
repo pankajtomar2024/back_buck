@@ -41,7 +41,7 @@ instance.interceptors.request.use(
       config.headers["Authorization"] = "Bearer " + token;
 
  
-        'Access-Control-Allow-Origin' : '*'
+        // 'Access-Control-Allow-Origin' : '*'
   // 'Access-Control-Allow-Methods':,
       //   config.headers["ngrok-skip-browser-warning"] = "69420";
     }
