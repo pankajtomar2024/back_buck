@@ -24,7 +24,8 @@ import NotFoundPage from "404notfoundpage";
 function App() {
   return (
     <>
-      <RecoilRoot>
+      <h1> I am here </h1>
+{/*       <RecoilRoot>
         <ThemeProvider theme={theme}>
           <BrowserRouter>
             <Routes>
@@ -66,7 +67,7 @@ function App() {
             </Routes>
           </BrowserRouter>
         </ThemeProvider>
-      </RecoilRoot>
+      </RecoilRoot> */}
     </>
   );
 }
