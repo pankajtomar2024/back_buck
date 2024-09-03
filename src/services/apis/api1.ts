@@ -34,11 +34,13 @@ instance.interceptors.request.use(
       ""
     );
 
+
+      config.headers["Access-Control-Allow-Origin"] = *;
+  config.headers["Access-Control-Allow-Methods"] = 'GET,PUT,POST,DELETE,PATCH,OPTIONS'
     if (token) {
       config.headers["Authorization"] = "Bearer " + token;
 
-  config.headers["Access-Control-Allow-Origin"] = *;
-  config.headers["Access-Control-Allow-Methods"] = 'GET,PUT,POST,DELETE,PATCH,OPTIONS'
+ 
 
   //       'Access-Control-Allow-Origin' : '*',
   // 'Access-Control-Allow-Methods':,
