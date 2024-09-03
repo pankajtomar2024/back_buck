@@ -1,8 +1,10 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
 import { Gifting as giftimage } from "@/assets/images";
 import customStyle from "@/style/custom.style";
+import { useNavigate } from "react-router-dom";
 
 const Gifting = () => {
+  let navigate = useNavigate();
   return (
     <>
       <Box sx={{ p: 2 }}>
@@ -46,6 +48,9 @@ const Gifting = () => {
                     fontWeight: "500",
                     fontFamily: "Arial",
                     borderRadius: "20px",
+                  }}
+                  onClick={() => {
+                    navigate("shop");
                   }}
                 >
                   <small>Know More</small>

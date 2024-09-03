@@ -5,6 +5,10 @@ const customStyle = {
     FrontPagebackgroundColor: "#B2DDD3",
     OurProductBackgroundColor: "#694F8E",
     TeaTimeBackgroudnColor: "#ECC1EC",
+    NavbarUpperColor: "#694F8E",
+  },
+  fontstyle: {
+    headerFontFamily: "OverLock",
   },
 };
 

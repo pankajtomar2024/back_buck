@@ -10,31 +10,38 @@ import {
   Typography,
 } from "@mui/material";
 import customstyle from "@/style/custom.style";
+import { useNavigate } from "react-router-dom";
 
 const cards = [
   {
-    title: "Card 1",
+    title: "Anniversary Cake",
     description: "This is the description for card 1.",
-    imgPath: "https://via.placeholder.com/300",
+    imgPath:
+      "https://gurgaonbakers.com/wp-content/uploads/2020/12/printed-heart-photo-cake.jpg",
   },
   {
-    title: "Card 2",
+    title: "ChocoLava Cake",
     description: "This is the description for card 2.",
-    imgPath: "https://via.placeholder.com/300",
+    imgPath:
+      "https://gurgaonbakers.com/wp-content/uploads/2020/11/chocolate-heaven-cake.jpg",
   },
   {
-    title: "Card 3",
-    description: "This is the description for card 3.",
-    imgPath: "https://via.placeholder.com/300",
+    title: "BlueBerry Cake",
+    description:
+      "https://gurgaonbakers.com/wp-content/uploads/2020/12/blueberry-cakes.jpg",
+    imgPath:
+      "https://gurgaonbakers.com/wp-content/uploads/2020/12/blueberry-cakes.jpg",
   },
   {
-    title: "Card 4",
+    title: "Plum Cake",
     description: "This is the description for card 4.",
-    imgPath: "https://via.placeholder.com/300",
+    imgPath:
+      "https://gurgaonbakers.com/wp-content/uploads/2020/12/truffle-cakes.jpg",
   },
 ];
 
 const OurProduct = () => {
+  let naviagate = useNavigate();
   return (
     <>
       <Box
@@ -61,17 +68,21 @@ const OurProduct = () => {
                     <CardMedia
                       component="img"
                       height="140"
-                      //   image={card.imgPath}
+                      image={card.imgPath}
+                      onClick={() => {
+                        naviagate("shop");
+                      }}
+
                       //   alt={card.title}
-                      src={pastreies}
+                      // src={pastreies}
                     />
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="div">
                         {card.title}
                       </Typography>
-                      <Typography variant="body2" color="text.secondary">
+                      {/* <Typography variant="body2" color="text.secondary">
                         {card.description}
-                      </Typography>
+                      </Typography> */}
                     </CardContent>
                   </Card>
                 </Grid>
@@ -95,6 +106,9 @@ const OurProduct = () => {
                   fontWeight: "500",
                   fontFamily: "Arial",
                   borderRadius: "20px",
+                }}
+                onClick={() => {
+                  naviagate("shop");
                 }}
               >
                 <small>Know More</small>

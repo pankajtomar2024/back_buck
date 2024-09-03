@@ -8,7 +8,9 @@ import {
   Typography,
 } from "@mui/material";
 import customstyle from "@/style/custom.style";
+import { useNavigate } from "react-router-dom";
 const AboutUs = () => {
+  let navigate = useNavigate();
   return (
     <>
       <Box padding="2%">
@@ -49,6 +51,9 @@ const AboutUs = () => {
                 fontWeight: "500",
                 fontFamily: "Arial",
                 borderRadius: "20px",
+              }}
+              onClick={() => {
+                navigate("about");
               }}
             >
               <small>Know More</small>

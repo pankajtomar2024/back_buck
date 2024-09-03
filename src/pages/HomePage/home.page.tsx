@@ -19,7 +19,7 @@ const HomePage = () => {
       <Box>
         <TestimonialCarousel></TestimonialCarousel>
       </Box>
-      <OurBestSeller></OurBestSeller>
+      {/* <OurBestSeller></OurBestSeller> */}
       <OrderOnline></OrderOnline>
     </>
   );

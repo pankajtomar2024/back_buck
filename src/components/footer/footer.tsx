@@ -17,6 +17,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 const Footer = () => {
   return (
     <Box
+      id="footer-bakebuck"
       sx={{
         backgroundColor: "black",
 
@@ -91,12 +92,12 @@ const Footer = () => {
               >
                 <LocalPhoneIcon sx={{ mr: 1 }} />
                 <Typography textAlign="center" variant="body2">
-                  +1 (123) 456-7890
+                  +91- 78274 70399
                 </Typography>
               </Box>
               <Box sx={{ display: "flex", alignItems: "center", mb: 1 }}>
                 <MailOutlineIcon sx={{ mr: 1 }} />
-                <Typography variant="body2">contact@example.com</Typography>
+                <Typography variant="body2">contact@bakebucks.com</Typography>
               </Box>
               <Box>
                 <Box

@@ -1,8 +1,10 @@
 import { Teacake } from "@/assets/images";
 import customStyle from "@/style/custom.style";
 import { Box, Button, Grid, Typography } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 const TeaTime = () => {
+  let navigate = useNavigate();
   return (
     <>
       <Box
@@ -65,6 +67,9 @@ const TeaTime = () => {
                     fontWeight: "500",
                     fontFamily: "Arial",
                     borderRadius: "20px",
+                  }}
+                  onClick={() => {
+                    navigate("shop");
                   }}
                 >
                   <small>Know More</small>

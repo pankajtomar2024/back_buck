@@ -26,6 +26,44 @@ export interface Admin {
   adminId: string;
   createdAt: string;
   updatedAt: string;
-  __v: number;
+  __v?: number;
   adminOtp: string;
+}
+
+export interface Address {
+  _id: string;
+  name: string;
+  addressType: string;
+  street: string;
+  city: string;
+  state?: string;
+  postalCode?: string;
+  country?: string;
+  createdAt?: string;
+  updatedAt?: string;
+  __v?: number;
+  isDefault?: boolean;
+}
+
+export interface AddressListResponse {
+  success: boolean;
+  message: string;
+  length: number;
+  address: Address[];
+}
+
+export interface User {
+  address: Address[];
+  _id: string;
+  name: string;
+  email: string;
+  role: string;
+  contactNumber: string;
+  orders: any[]; // Adjust the type of orders based on its structure if needed
+}
+
+export interface UserResponse {
+  status: boolean;
+  message: string;
+  user: User;
 }

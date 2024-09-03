@@ -58,6 +58,7 @@ const OurBestSeller = () => {
   return (
     <>
       <Box
+        id="best-seller"
         sx={{
           padding: "2%",
           background: "linear-gradient(#694F8E 50%, white 50%)",
@@ -70,6 +71,7 @@ const OurBestSeller = () => {
             fontFamily="Overlock"
             color="white"
             variant="h3"
+            id="best-seller"
           >
             Our Best Sellers
           </Typography>

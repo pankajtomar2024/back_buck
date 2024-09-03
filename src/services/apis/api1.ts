@@ -28,6 +28,7 @@ const instance: AxiosInstance = axios.create({
 instance.interceptors.request.use(
   (config: AdaptAxiosRequestConfig) => {
     const localStorageService = new LocalStorageService();
+
     const token = (localStorageService.get_accesstoken() as any)?.replaceAll(
       `"`,
       ""
@@ -90,9 +91,30 @@ const get = async (url: string) => {
   }
 };
 
-const post = async (url: string, object: any) => {
+const post = async (url: string, object: any, token?: string) => {
   try {
-    const data = await instance.post(url, object);
+    let data;
+    if (token) {
+      // console.log("hi data here", data);
+      instance.interceptors.request.use(
+        (config: AdaptAxiosRequestConfig) => {
+          config.headers["Activation-token"] = token;
+
+          logger.log("Request Interceptor:", config);
+          return config;
+        },
+        (error: any) => {
+          // Handle request error
+          logger.error("Request Interceptor Error:", error);
+          return Promise.reject(error);
+        }
+      );
+      data = await instance.post(url, object);
+    } else {
+      data = await instance.post(url, object);
+    }
+    // instance.
+
     return data;
   } catch (error) {
     throw error;

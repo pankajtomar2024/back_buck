@@ -7,6 +7,8 @@ import cakse from "./cake.png";
 import Gifting from "./gifting.png";
 import Teacake from "./tea-cake.png";
 import Tesimonial from "./testimonial.png";
+import Veg from "./veg.png";
+import NonVeg from "./non-veg.png";
 export {
   LogoBuck,
   FirstCarousle,
@@ -17,4 +19,6 @@ export {
   Gifting,
   Teacake,
   Tesimonial,
+  Veg,
+  NonVeg,
 };
