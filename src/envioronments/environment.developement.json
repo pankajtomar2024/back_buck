@@ -1,5 +1,5 @@
 {
-  "BASE_ADMIN_API_URL": "",
+  "BASE_ADMIN_API_URL": "https://bakebucks-server.onrender.com",
   "ENV": "LOCAL",
   "RAZORPAY_API_KEYID":"rzp_test_zk0xHWWFfejILY",
   "RAZORPAY_API_KEY_SECRET":"JAxaUn0dJJ8ROtT1cs9A0WyR"
