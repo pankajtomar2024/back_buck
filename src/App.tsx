@@ -42,9 +42,9 @@ function App() {
                 <Route path="user/add" element={<AddUser />}></Route>
 {/*                 <Route path="cart/exit" element={<ExitCartPage />}></Route> */}
                 // <Route path="about" element={<AboutUs />}></Route>
-                <Route path="product/:id" element={<ProductPage />}></Route>
+{/*                 <Route path="product/:id" element={<ProductPage />}></Route>
                 <Route path="order" element={<Order />}></Route>
-                <Route path="profile" element={<Profile />}></Route>
+                <Route path="profile" element={<Profile />}></Route> */}
 {/*                 <Route path="login" element={<LoginPage />}></Route> */}
               </Route>
 
