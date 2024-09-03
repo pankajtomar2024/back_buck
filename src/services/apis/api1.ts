@@ -35,14 +35,13 @@ instance.interceptors.request.use(
     );
 
 
-      config.headers["Access-Control-Allow-Origin"] = *;
-  config.headers["Access-Control-Allow-Methods"] = 'GET,PUT,POST,DELETE,PATCH,OPTIONS'
+  // config.headers["Access-Control-Allow-Origin"] = *;
+  // config.headers["Access-Control-Allow-Methods"] = 'GET,PUT,POST,DELETE,PATCH,OPTIONS'
     if (token) {
       config.headers["Authorization"] = "Bearer " + token;
 
  
-
-  //       'Access-Control-Allow-Origin' : '*',
+        'Access-Control-Allow-Origin' : '*'
   // 'Access-Control-Allow-Methods':,
       //   config.headers["ngrok-skip-browser-warning"] = "69420";
     }
