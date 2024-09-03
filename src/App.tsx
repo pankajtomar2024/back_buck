@@ -25,7 +25,7 @@ function App() {
   return (
     <>
       <h1> I am here </h1>
-{/*       <RecoilRoot>
+      <RecoilRoot>
         <ThemeProvider theme={theme}>
           <BrowserRouter>
             <Routes>
@@ -36,17 +36,8 @@ function App() {
               >
                 <Route path="/" element={<HomePage />}></Route>
 
-                <Route
-                  path="notfound"
-                  element={
-                    <NotFoundPage
-                      imageUrl="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGdxbnRpZ2dyNnA2OTMwbmcwa3hjY2FoN3piNjFwcGdxZndycXNtaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/H54feNXf6i4eAQubud/giphy.webp"
-                      linkText="Go To Gome Page"
-                    />
-                  }
-                ></Route>
 
-                <Route path="admin/product" element={<LoginPage />}></Route>
+{/*                 <Route path="admin/product" element={<LoginPage />}></Route>
                 <Route path="shop" element={<EShopLayout />}></Route>
                 <Route path="user/add" element={<AddUser />}></Route>
                 <Route path="cart/exit" element={<ExitCartPage />}></Route>
@@ -54,20 +45,22 @@ function App() {
                 <Route path="product/:id" element={<ProductPage />}></Route>
                 <Route path="order" element={<Order />}></Route>
                 <Route path="profile" element={<Profile />}></Route>
-                <Route path="login" element={<LoginPage />}></Route>
+                <Route path="login" element={<LoginPage />}></Route> */}
               </Route>
 
-              <Route path="admin/login" element={<LoginPage />}></Route>
+{/*               <Route path="admin/login" element={<LoginPage />}></Route>
 
               <Route path="/admin" element={<AdminPageLayout />}>
                 <Route path="products" element={<AdminMainPage />}></Route>
                 <Route path="branches" element={<BranchList />}></Route>
                 <Route path="orders" element={<OrderPageAdmin />}></Route>
-              </Route>
+              </Route> */}
+
+              
             </Routes>
           </BrowserRouter>
         </ThemeProvider>
-      </RecoilRoot> */}
+      </RecoilRoot>
     </>
   );
 }
